@@ -33,17 +33,17 @@
 									I am fascinated about programming and exploring new CS fields.</p>
 
 									<br> </br>
-									<br> </br>
-									<br> </br>
-										<ul class="actions special">
-											<li><a href="#one" class="button scrolly">about me</a></li>
-										</ul>
+											<a href="#one" class="button scrolly">about me</a>
+											
+											<br> </br>
+										
 							</div>
 							<div class="header-image">
 								<img src="images/hemm.jpg" alt="My Image">
-						
-						
+					
 							</div>
+								
+							
 						</header>
 					
 					
@@ -239,32 +239,42 @@
 
 header {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  background-color: #201e23;
-  padding: 0px;
+	margin-right: 0;
 }
 
 .header-text {
-  flex-basis: 55%;
-  padding-right: 20px;
-}
-
-.header-text h1 {
-  font-size: 2rem;
-  margin-top: 60;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .header-image {
-  flex-basis: 45%;
-	 margin-top: 0;
+  margin: 0 0px;
+	margin-right: 0;
 }
 
 .header-image img {
-  width: 100%;
-	height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    flex-direction: row;
+  }
   
+  .header-text {
+    margin-right: 20px;
+		margin-left: 2dokui0px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  
+  .header-image {
+    margin: 0;
+  }
 }
 
 
