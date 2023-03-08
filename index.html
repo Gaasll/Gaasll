@@ -26,6 +26,7 @@
 								<h1>
 									<br> </br>
 									<br> </br>
+									
 									<div class="line-1 anim-typewriter">Hi, I'm <strong>Garabet</strong>, CS-student<br /></div>
 									<div class="line-1 anim-typewriter1">at KTH in Kista.</div>
 								</h1>
@@ -239,44 +240,34 @@
 
 header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-	margin-right: 0;
-}
-
-.header-text {
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .header-image {
-  margin: 0 0px;
-	margin-right: 0;
+  margin-top: 0;
+  margin-right: 0;
+  max-width: 100%;
+  height: auto;
 }
 
-.header-image img {
-  margin: 0;
-  padding: 0;
+.header-text {
+  margin-left: 20px; /* Adjust this value to increase/decrease the space between image and text */
 }
 
-@media screen and (min-width: 800px) {
+@media only screen and (max-width: 600px) {
   header {
-    flex-direction: row;
-  }
-  
-  .header-text {
-    margin-right: 20px;
-		margin-left: 2dokui0px;
-    margin-bottom: 0;
-    text-align: left;
+    flex-direction: column;
+    text-align: center;
   }
   
   .header-image {
-    margin: 0;
+    margin-top: 20px;
+  }
+  
+  .header-text {
+    margin: 20px 0 0 0;
   }
 }
-
 
 
 </style>
