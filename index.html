@@ -12,6 +12,7 @@
 
 	
 
+
 		<!-- Header -->
 		<section id="header">
 	
@@ -21,31 +22,18 @@
 
 				<div class="inner">
 			
-						<header>
-							<div class="header-text">
-								<h1>
-									<br> </br>
-									<br> </br>
-									
-									<div class="line-1 anim-typewriter">Hi, I'm <strong>Garabet</strong>, CS-student<br /></div>
-									<div class="line-1 anim-typewriter1">at KTH in Kista.</div>
-								</h1>
-								<p>My ambitions are within technology and engineering.<br />
-									I am fascinated about programming and exploring new CS fields.</p>
-
-									<br> </br>
-											<a href="#one" class="button scrolly">about me</a>
-											
-											<br> </br>
-										
-							</div>
-							<div class="header-image">
-								<img src="images/hemm.jpg" alt="My Image">
-					
-							</div>
-								
-							
-						</header>
+				<header>
+					<div class="header-text">
+						<h1>Hi, I'm <strong>Garabet</strong>, CS-student at KTH in Kista.<br /></h1>
+						<p>My ambitions are within technology and engineering.<br />
+							I am fascinated about programming and exploring new CS fields.</p>
+						<p><a href="#one" class="button scrolly">about me</a></p>
+					</div>
+				
+					<div class="header-image">
+						<img src="images/hemm.jpg" alt="Portfolio Image">
+					</div>
+				</header>
 					
 					
 				</div>
@@ -237,38 +225,56 @@
   left: 4px;
 }
 
-
 header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
+.header-text {
+  padding: 20px;
+}
+
+.header-text h1 {
+  font-size: 2rem;
+}
+
+.header-text p {
+  font-size: 1rem;
+}
+
 .header-image {
-  margin-top: 0;
-  margin-right: 0;
-  max-width: 100%;
+  margin-left: auto;
+}
+
+.header-image img {
   height: auto;
 }
 
-.header-text {
-  margin-left: 20px; /* Adjust this value to increase/decrease the space between image and text */
-}
-
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   header {
     flex-direction: column;
-    text-align: center;
-  }
-  
-  .header-image {
-    margin-top: 20px;
+    align-items: flex-start;
   }
   
   .header-text {
-    margin: 20px 0 0 0;
+    font-size: 1.5rem;
+  }
+  
+  .header-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-text p {
+    font-size: 0.8rem;
+  }
+  
+  .header-image img {
+    width: 50%;
+    margin: 0px 0;
+		height: 50%;
   }
 }
-
 
 </style>
 
