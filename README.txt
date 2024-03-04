@@ -1,1 +1,2 @@
-
+🌐 Socials:
+LinkedIn YouTube
